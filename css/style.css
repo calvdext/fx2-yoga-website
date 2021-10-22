@@ -1,7 +1,11 @@
-div {
+/*div {
     border: 3px solid black;
     margin: 5px;
     padding: 5px;
+}*/
+body {
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: #ff9900;
@@ -24,6 +28,21 @@ header h1 {
     margin: 2px;
 }
 
+.training-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff9900;
+}
+
+.training-option img {
+    width: 90%;
+}
+
+.training-option h2 {
+    color: #2b78e4;
+}
+
 footer {
     background-color: #ff9900;
     display: flex;
@@ -36,7 +55,7 @@ footer {
 }
 
 .social-media img {
-    width: 70px;
+    width: 30px;
 }
 
 .contact-info {
@@ -48,3 +67,48 @@ footer {
 .contact-info p {
     margin: 2px;
 }
+
+@media screen and (min-width: 600px){
+      header {
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+      }
+      header .heading {
+          padding-left: 15%;
+          font-size: 50px; 
+      }
+      .logo {
+          margin-left: 5%;
+      }
+      footer {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+      }
+      .main-contect {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .main-contect img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:   
+      }
+      .social-media {
+          display: flex;
+          flex-direction: row;
+      }
+      .social-media img {
+          margin: 10%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+      .contact-info {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+    }
